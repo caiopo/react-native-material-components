@@ -6,10 +6,12 @@
   "types": "build/index.d.ts",
   "author": "caiopo",
   "scripts": {
-    "prepublishOnly": "rm -rf build && tsc",
+    "prepack": "rm -rf build && tsc",
     "format": "prettier 'lib/**/*.{js,ts,tsx}'",
     "typecheck": "tsc --noEmit",
-    "fmt": "yarn format --write && yarn typecheck"
+    "fmt": "yarn format --write && yarn typecheck",
+    "update": "bash update.sh",
+    "update2": "yarn pack && cd example && yarn add ../react-native-better-switch-v*.tgz --force"
   },
   "peerDependencies": {
     "@babel/core": "*",
