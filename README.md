@@ -1,0 +1,3 @@
+react-native-better-switch
+--------------------------
+

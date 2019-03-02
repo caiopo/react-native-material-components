@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es5"],
+    "jsx": "react-native",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "lib/"
+  ]
+}
