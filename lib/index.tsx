@@ -7,21 +7,22 @@ interface Props {
 
   duration?: number
 
-  activeForegroundColor?: string
-  inactiveForegroundColor?: string
+  activeThumbColor?: string
+  inactiveThumbColor?: string
 
-  activeBackgroundColor?: string
-  inactiveBackgroundColor?: string
+  activeTrackColor?: string
+  inactiveTrackColor?: string
 }
 
-export function Switch({
+export default function Switch({
   value,
   duration = 200,
 
-  activeForegroundColor = '#0084D9',
-  activeBackgroundColor = '#9ACDED',
-  inactiveForegroundColor = '#FFFFFF',
-  inactiveBackgroundColor = '#C6C6C6',
+  activeThumbColor = '#0084D9',
+  activeTrackColor = '#9ACDED',
+
+  inactiveThumbColor = '#FFFFFF',
+  inactiveTrackColor = '#C6C6C6',
 }: Props) {
   const animation = useAnimation({
     type: 'timing',
@@ -37,7 +38,7 @@ export function Switch({
           {
             backgroundColor: animation.interpolate({
               inputRange: [0, 1],
-              outputRange: [inactiveBackgroundColor, activeBackgroundColor],
+              outputRange: [inactiveTrackColor, activeTrackColor],
             }),
           },
         ]}
@@ -54,7 +55,7 @@ export function Switch({
 
             backgroundColor: animation.interpolate({
               inputRange: [0, 1],
-              outputRange: [inactiveForegroundColor, activeForegroundColor],
+              outputRange: [inactiveThumbColor, activeThumbColor],
             }),
           },
         ]}

@@ -7,7 +7,7 @@
   "author": "caiopo",
   "scripts": {
     "prepack": "rm -rf build && tsc",
-    "format": "prettier '**/*.{js,ts,tsx}'",
+    "format": "prettier 'lib/**/*.{js,ts,tsx}' 'example/**/*.{js,ts,tsx}'",
     "typecheck": "tsc --noEmit",
     "fmt": "yarn format --write && yarn typecheck",
     "dev": "tsc -w --outDir example/switch"

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import { Switch } from './switch'
+import Switch from './switch'
 
 export default function App() {
   const [selected1, setSelected1] = useState(false)
@@ -24,19 +24,16 @@ export default function App() {
 
       <View style={styles.spacing} />
 
-      <TouchableOpacity
-        activeOpacity={1}
-        onPress={toggle2}>
-
+      <TouchableOpacity activeOpacity={1} onPress={toggle2}>
         <Switch
           value={selected2}
-          activeForegroundColor="#6200EE"
-          activeBackgroundColor="#C39EF8" />
+          activeThumbColor="#6200EE"
+          activeTrackColor="#C39EF8"
+        />
       </TouchableOpacity>
     </View>
   )
 }
-
 
 const styles = StyleSheet.create({
   container: {
