@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "author": "caiopo",
+  "repository": "github:caiopo/react-native-better-switch",
   "scripts": {
     "prepack": "rm -rf build && tsc",
     "format": "prettier 'lib/**/*.{js,ts,tsx}' 'example/**/*.{js,ts,tsx}'",
