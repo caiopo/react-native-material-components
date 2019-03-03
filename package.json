@@ -7,16 +7,18 @@
   "author": "caiopo",
   "scripts": {
     "prepack": "rm -rf build && tsc",
-    "format": "prettier 'lib/**/*.{js,ts,tsx}'",
+    "format": "prettier '**/*.{js,ts,tsx}'",
     "typecheck": "tsc --noEmit",
     "fmt": "yarn format --write && yarn typecheck",
-    "update": "bash update.sh",
-    "update2": "yarn pack && cd example && yarn add ../react-native-better-switch-v*.tgz --force"
+    "dev": "tsc -w --outDir example/switch"
+  },
+  "dependencies": {
+    "react-native-animation-hooks": "^1.0.1"
   },
   "peerDependencies": {
-    "@babel/core": "*",
     "react": "^16.8.3",
-    "react-native": "^0.59.0-rc.3"
+    "react-native": "^0.59.0-rc.3",
+    "@babel/core": "*"
   },
   "devDependencies": {
     "@types/react": "^16.8.6",

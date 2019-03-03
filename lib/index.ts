@@ -1,5 +1,3 @@
-import { HelloWorld } from './HelloWorld'
+import { Switch } from './Switch'
 
-export {
-  HelloWorld,
-}
+export { Switch }
