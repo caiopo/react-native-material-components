@@ -1,10 +1,15 @@
 # react-native-better-switch
+[![npm shield](https://img.shields.io/npm/v/react-native-better-switch.svg)](https://www.npmjs.com/package/react-native-better-switch)
 
 Implementation of the [Material Design Switch Component][md].
 
 - TypeScript support
 - Pure JS
 - Requires react-native >= 0.59
+
+### Example
+
+<img src=".github/example.gif" alt="example" width="300"/>
 
 ### Installation
 ```
@@ -17,7 +22,7 @@ npm install --save react-native-better-switch
 
 [md]: https://material.io/design/components/selection-controls.html#switches
 
-### Example
+### Usage
 
 ```jsx
 import React, { useCallback, useState } from 'react'

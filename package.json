@@ -1,11 +1,16 @@
 {
   "name": "react-native-better-switch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "author": "caiopo",
   "repository": "github:caiopo/react-native-better-switch",
+  "keywords": [
+    "react-native",
+    "switch",
+    "material design"
+  ],
   "scripts": {
     "prepack": "rm -rf build && tsc",
     "format": "prettier 'lib/**/*.{js,ts,tsx}' 'example/**/*.{js,ts,tsx}'",
@@ -17,9 +22,9 @@
     "react-native-animation-hooks": "^1.0.1"
   },
   "peerDependencies": {
+    "@babel/core": "*",
     "react": "^16.8.3",
-    "react-native": "^0.59.0-rc.3",
-    "@babel/core": "*"
+    "react-native": "^0.59.0-rc.3"
   },
   "devDependencies": {
     "@types/react": "^16.8.6",
