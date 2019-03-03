@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import Switch from './switch'
+import Switch from 'react-native-better-switch'
 
 export default function App() {
   const [selected1, setSelected1] = useState(false)
