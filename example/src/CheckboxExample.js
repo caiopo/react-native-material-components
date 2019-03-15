@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import Switch from 'react-native-better-switch'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Checkbox } from '../switch'
 
-export default function App() {
+export default function CheckboxExample() {
   const [selected1, setSelected1] = useState(false)
   const [selected2, setSelected2] = useState(true)
 
@@ -16,20 +16,18 @@ export default function App() {
 
   const toggle2 = useCallback(() => {
     setSelected2((s) => !s)
-  })
+  }, [])
 
   return (
     <View style={styles.container}>
-      <Switch value={selected1} />
+      <Text style={styles.subtitle}>Checkbox</Text>
 
-      <View style={styles.spacing} />
+      <Checkbox value={selected1} />
+
+      <View style={{ height: 24 }} />
 
       <TouchableOpacity activeOpacity={1} onPress={toggle2}>
-        <Switch
-          value={selected2}
-          activeThumbColor="#6200EE"
-          activeTrackColor="#C39EF8"
-        />
+        <Checkbox value={!selected2} />
       </TouchableOpacity>
     </View>
   )
@@ -37,13 +35,13 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'papayawhip',
   },
 
-  spacing: {
-    height: 24,
+  subtitle: {
+    fontSize: 16,
+    color: '#333333',
+    marginTop: 16,
+    marginBottom: 8,
   },
 })

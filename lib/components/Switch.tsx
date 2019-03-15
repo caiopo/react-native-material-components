@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useAnimation } from 'react-native-animation-hooks'
 import { Animated, Platform, StyleSheet, View } from 'react-native'
+import { Colors } from '../utils/colors'
 
 interface Props {
   value: boolean
@@ -14,15 +15,15 @@ interface Props {
   inactiveTrackColor?: string
 }
 
-export default function Switch({
+export function Switch({
   value,
   duration = 200,
 
-  activeThumbColor = '#0084D9',
-  activeTrackColor = '#9ACDED',
+  activeThumbColor = Colors.primaryBlue,
+  activeTrackColor = Colors.lightBlue,
 
-  inactiveThumbColor = '#FFFFFF',
-  inactiveTrackColor = '#C6C6C6',
+  inactiveThumbColor = Colors.white,
+  inactiveTrackColor = Colors.lightGray,
 }: Props) {
   const animation = useAnimation({
     type: 'timing',
@@ -89,7 +90,6 @@ const styles = StyleSheet.create({
     width: 34,
     height: 14,
     borderRadius: 7,
-    backgroundColor: 'cyan',
   },
 
   foreground: {

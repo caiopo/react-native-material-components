@@ -1,13 +1,13 @@
 {
-  "name": "react-native-better-switch",
-  "version": "0.1.1",
+  "name": "react-native-material-components",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "author": "caiopo",
-  "repository": "github:caiopo/react-native-better-switch",
+  "repository": "github:caiopo/react-native-material-components",
   "keywords": [
-    "react-native",
+    "react native",
     "switch",
     "material design"
   ],
@@ -16,7 +16,7 @@
     "format": "prettier 'lib/**/*.{js,ts,tsx}' 'example/**/*.{js,ts,tsx}'",
     "typecheck": "tsc --noEmit",
     "fmt": "yarn format --write && yarn typecheck",
-    "dev": "tsc -w --outDir example/switch"
+    "dev": "concurrently \"tsc -w --outDir example/switch\" \"cd example && yarn android\""
   },
   "dependencies": {
     "react-native-animation-hooks": "^1.0.1"
@@ -24,11 +24,12 @@
   "peerDependencies": {
     "@babel/core": "*",
     "react": "^16.8.3",
-    "react-native": "^0.59.0-rc.3"
+    "react-native": "^0.59.1"
   },
   "devDependencies": {
     "@types/react": "^16.8.6",
     "@types/react-native": "^0.57.38",
+    "concurrently": "^4.1.0",
     "prettier": "^1.16.4",
     "react": "^16.8.3",
     "react-native": "^0.59.0-rc.3",

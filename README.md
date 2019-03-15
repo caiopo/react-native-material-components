@@ -1,7 +1,6 @@
-# react-native-better-switch
-[![npm shield](https://img.shields.io/npm/v/react-native-better-switch.svg)](https://www.npmjs.com/package/react-native-better-switch)
+# react-native-material-components
 
-Implementation of the [Material Design Switch Component][md].
+Implementation of some [Material Design Components][md].
 
 - TypeScript support
 - Pure JS
@@ -13,21 +12,21 @@ Implementation of the [Material Design Switch Component][md].
 
 ### Installation
 ```
-yarn add react-native-better-switch
+yarn add react-native-material-components
 ```
 or
 ```
-npm install --save react-native-better-switch
+npm install --save react-native-material-components
 ```
 
-[md]: https://material.io/design/components/selection-controls.html#switches
+[md]: https://material.io/design/components/
 
 ### Usage
 
 ```jsx
 import React, { useCallback, useState } from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import Switch from 'react-native-better-switch'
+import { Switch } from 'react-native-material-components'
 
 export default function App() {
   const [value, setValue] = useState(false)
@@ -54,15 +53,3 @@ const styles = StyleSheet.create({
   },
 })
 ```
-
-### Documentation
-The `Switch` component receives the following props:
-
-| name               | type    | required/default               |
-|--------------------|---------|--------------------------------|
-| value              | boolean | required                       |
-| duration           | number  | optional, defaults to 200 (ms) |
-| activeThumbColor   | string  | optional, defaults to #0084D9  |
-| activeTrackColor   | string  | optional, defaults to #9ACDED  |
-| inactiveThumbColor | string  | optional, defaults to #FFFFFF  |
-| inactiveTrackColor | string  | optional, defaults to #C6C6C6  |

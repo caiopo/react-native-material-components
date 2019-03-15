@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.0-rc.3",
+    "react-native": "0.59.1",
     "react-native-better-switch": "^0.1.1"
   },
   "devDependencies": {

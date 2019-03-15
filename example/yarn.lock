@@ -4647,10 +4647,10 @@ react-native-better-switch@^0.1.1:
   dependencies:
     react-native-animation-hooks "^1.0.1"
 
-react-native@0.59.0-rc.3:
-  version "0.59.0-rc.3"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.0-rc.3.tgz#a989e4cdab596bb62248c26920fb641b210fd60e"
-  integrity sha512-jMH/5VUaajBXADmBlDyNQ9gYDU3ywXRQTdVMFBLPcPwT+xJzF1HuUo/xEpAQ6G+mjia3G70BQpEgxi55berviw==
+react-native@0.59.1:
+  version "0.59.1"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.59.1.tgz#3274dcc0f9558799bd41c8092acac2a79bd627ce"
+  integrity sha512-KA/MyoCQLGavPBc/Q2QRfdbxHuKHTcYTks9xwwRPzgDqTfmTuDcyoC6jUBTfhZ0LEes5GMoKVM4eVrYUbprOmw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@react-native-community/cli" "^1.2.1"
