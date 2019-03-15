@@ -1,6 +1,6 @@
 {
   "name": "react-native-better-switch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "build/index.js",
   "types": "build/index.d.ts",
